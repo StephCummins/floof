@@ -3,7 +3,7 @@ import './stylesheets/style.css';
 
 import PageBody from './components/PageBody';
 
-const App = () =>{
+const App = () => {
   return (
     <>
       <PageBody />
