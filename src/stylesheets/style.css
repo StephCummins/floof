@@ -1,0 +1,530 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Archivo Black', sans-serif;
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 30px 60px;
+}
+
+.logo :hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 8rem;
+  color: #219EBC;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 2.25rem;
+}
+
+li {
+  padding-left: 30px;
+  color: #FF4F00;
+}
+
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #FF4F00;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.topFloof {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+h2 {
+  color: #023047;
+  font-size: 2.75rem;
+  text-align: center;
+}
+
+h3 {
+  color:#FF4F00;
+
+}
+
+.overlappingElements {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orangeBackground{
+  background-color: #FF4F00;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px 0;
+}
+
+.tealBorder{
+  background-color: #219EBC;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+}
+
+.whiteBox{
+  background-color: white;
+  width: 475px;
+  height: 475px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whiteBox p {
+  font-size: 2rem;
+  padding: 175px;
+}
+
+.floofImg {
+  width: 475px;
+  height: 475px;
+  position: absolute;
+}
+
+.floofInfoRating {
+  margin-bottom: 30px;
+}
+
+.orangeBackgroundRate {
+  background-color: #FF4F00;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 200px 0;
+}
+
+.floofRatingBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 190px 0;
+}
+
+.tealFrame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #219EBC;
+  min-width: 500px;
+  min-height: 500px;
+  margin: 50px 20px;
+}
+
+.innerFloofImg {
+  width: 475px;
+  height: 475px;
+}
+
+.voteBtn {
+  margin-top: 40px;
+}
+
+button {
+  background-color: #219EBC;
+  max-width: 300px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2rem;
+  padding: 20px 20px;
+  margin: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  bottom: 0
+}
+
+.footerPawprints {
+  max-width: 532px;
+  width: 50%;
+}
+
+#postTopFloof {
+  margin-bottom: 0px;
+}
+
+.formElements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  color: #023047;
+  margin-bottom: 10px;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+}
+
+.floofInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.05rem;
+}
+
+#textboxid {
+  font-size: 1.1rem;
+}
+
+.uploadBtn {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding: 20px;
+  font-size: 1.5rem;
+  min-width: 400px;
+}
+
+#orangePost {
+  margin-bottom: 180px;
+}
+
+input::file-selector-button {
+  background-color: #FF4F00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1rem;
+  padding: 10px 10px;
+}
+
+input::file-selector-button:hover {
+  cursor: pointer;
+}
+
+#ratepaw{
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 1060px) {
+  .tealFrame {
+      min-width: 400px;
+      min-height: 400px;
+  }
+
+  .innerFloofImg {
+      width: 375px;
+      height: 375px;
+  }
+
+  .orangeBackgroundRate {
+      margin: 165px 0;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  nav {
+      margin: 25px 40px;
+  }
+
+  li {
+      padding-left: 15px;
+  }
+
+  h1 {
+      font-size: 7rem;
+  }
+
+  h2 {
+      font-size: 2.25rem;
+  }
+
+  ul {
+      font-size: 2rem;
+  }
+
+  .orangeBackgroundRate {
+      margin: 135px 0;
+  }
+
+  button {
+      max-width: 225px;
+      font-size: 1.75rem;
+  }
+
+  .tealFrame {
+      min-width: 350px;
+      min-height: 350px;
+  }
+
+  .innerFloofImg {
+      width: 325px;
+      height: 325px;
+  }
+}
+
+@media screen and (max-width: 750px) {   
+  .tealFrame {
+      min-width: 300px;
+      min-height: 300px;
+  }
+
+  .innerFloofImg {
+      width: 275px;
+      height: 275px;
+  }
+
+  .orangeBackgroundRate {
+      margin: 100px 0;
+  }
+}
+
+@media screen and (max-width: 650px) {   
+  .tealFrame {
+      min-width: 250px;
+      min-height: 250px;
+  }
+
+  .innerFloofImg {
+      width: 225px;
+      height: 225px;
+  }
+ 
+  h1 {
+      font-size: 5rem;
+  }
+
+  h2 {
+
+      font-size: 1.75rem;
+  }
+
+  ul {
+      font-size: 1.5rem;
+  }
+
+  .topFloof {
+      margin-bottom: 20px;
+  }
+
+  .orangeBackground {
+      margin: 150px 0;
+  }
+
+  #orangePost {
+    margin-bottom: 120px;
+  }
+
+  .tealBorder {
+      max-width: 400px;
+      max-height: 400px;
+  }
+  .floofImg {
+      max-width: 375px;
+      max-height: 375px;
+  }
+
+  .whiteBox {
+      max-width: 375px;
+      max-height: 375px;
+  }
+
+  button {
+      font-size: 1.25rem;
+      max-width: 175px;
+  }
+
+  .orangeBackgroundRate {
+      margin: 75px 0;
+  }
+
+  label {
+    margin: 20px 10px;
+  }
+
+  .labels {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .floofInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .uploadBtn {
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (min-width: 551px) { 
+  .flexDogs {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 550px) { 
+  #ratepaw{
+      padding-top: 0px;
+  }
+  
+  .orangeBackgroundRate {
+      display: none;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  h3 {
+      font-size: 1rem;
+  }
+
+  .floofRatingBox {
+      margin: 10px 0;
+  }
+
+  .floofRatingBox h2 {
+      font-size: 1.25rem;
+  }
+
+  .innerFloofImg {
+      width: 175px;
+      height: 175px;
+  }
+
+  .tealFrame {
+      min-width: 200px;
+      min-height: 200px;
+      margin: 10px 0;
+  }
+
+  .voteBtn {
+      margin-top: 15px;
+      font-size: 0.9rem;
+  }
+
+  .uploadBtn {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 445px) {   
+  nav {
+      margin: 15px 20px;
+  }
+  
+  .mainBtn {
+      display: flex;
+  }
+  
+  button {
+      padding: 10px 15px;
+      font-size: 0.65rem;
+      max-width: 100px;
+      margin: 5px;
+  }
+  
+  h1 {
+      font-size: 5rem;
+  }
+
+  ul {
+      font-size: 1.5rem;
+  }
+
+  .topFloof {
+      margin-top: 40px;
+      margin-bottom: 0px;
+  }
+
+  .orangeBackground {
+      margin: 100px 0px;
+  }
+
+  #orangePost {
+    margin-bottom: 80px;
+  }
+
+  .tealBorder {
+      max-width: 350px;
+      max-height: 350px;
+  }
+  .floofImg {
+      max-width: 325px;
+      max-height: 325px;
+  }
+
+  .whiteBox {
+      max-width: 325px;
+      max-height: 325px;
+  }
+
+  button {
+      font-size: 1.25rem;
+      max-width: 175px;
+  }
+
+  label {
+    margin: 15px;
+  }
+
+  .labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .floofInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .uploadBtn {
+    margin-top: 20px;
+    min-width: 300px;
+  }
+}
