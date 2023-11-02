@@ -2,7 +2,20 @@ const path = require('path');
 const express = require('express');
 
 const multer  = require('multer');
-const upload = multer({ dest: 'uploads/' });
+const upload = multer({
+  dest: 'uploads/',
+  limits: {
+    fileSize: 1000000
+  },
+  fileFilter: (req, file, cb) => {
+    if (file.mimetype === "image/png" || file.mimetype === "image/jpg" || file.mimetype === "image/jpeg") {
+      cb(null, true)
+    } else {
+      cb (null, false);
+      req.body.error = "An error occurred! File must be a png or jpeg.";
+    }
+  }
+});
 
 const crypto = require('crypto');
 
@@ -21,7 +34,17 @@ app.get('/', (req, res) => {
   res.status(200).sendFile(path.join(__dirname, '../public/index.html'))
 })
 
+app.get('/error', (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, '../public/error.html'))
+});
+
+// Post request for users to upload a new floof to S3 bucket storage.
+// S3 bucket storage returns a promise object w/the storage key for the image.
+// Storage key and image details are added to DynamoDB.
 app.post('/addfloof', upload.single('floofPic'), async (req, res, next) => {
+  // If Multer flags a file-type error, redirect to error page:
+  if (req.body.error) return res.status(400).redirect('/error');
+  
   const file = req.file;
   const newId = crypto.randomUUID();
 

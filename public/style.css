@@ -247,6 +247,23 @@ input::file-selector-button:hover {
   padding-top: 150px;
 }
 
+.floofError{
+  margin: 200px 100px;
+  display: flex;
+  align-items: center;
+}
+
+.floofError h2 {
+  text-align: left;
+}
+
+.floofError img {
+  width: 350px;
+  height: 350px;
+  padding: 50px;
+}
+
+
 @media screen and (max-width: 1060px) {
   .tealFrame {
       min-width: 400px;
@@ -261,6 +278,29 @@ input::file-selector-button:hover {
   .orangeBackgroundRate {
       margin: 165px 0;
   }
+
+  .floofError{
+    margin: 200px 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .floofError h1 {
+    text-align: left;
+    font-size: 3rem;
+  }
+  
+  .floofError h2 {
+    text-align: left;
+    font-size: 2rem;
+  }
+  
+  .floofError img {
+    width: 225px;
+    height: 225px;
+    padding: 50px;
+  }
+  
 }
 
 @media screen and (max-width: 880px) {
@@ -407,6 +447,27 @@ input::file-selector-button:hover {
 }
 
 @media screen and (max-width: 550px) { 
+  .floofError{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .floofError img {
+    padding: 20px;
+    
+  }
+
+  .floofError h1 {
+    text-align: center;
+  }
+
+  .floofError h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
   #ratepaw{
       padding-top: 0px;
   }
